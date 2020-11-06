@@ -22,6 +22,7 @@ class Form extends React.Component {
       name: this.state.name,
       age: this.state.age,
       height: this.state.height,
+      id: Date.now()
     };
     this.props.postSmurf(newSmurf);
     this.setState(initialState);
