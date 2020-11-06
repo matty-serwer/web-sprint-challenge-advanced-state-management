@@ -32,7 +32,7 @@ class Form extends React.Component {
     return (
       <div>
         <h1>Enter A New Smurf!</h1>
-        <form onSubmit={this.postNewSmurf}>
+        <form onSubmit={this.postNewSmurf} className="smurf-form">
           <label htmlFor='name'>
             Name:
             <input
@@ -66,5 +66,6 @@ class Form extends React.Component {
     );
   }
 }
+
 
 export default connect(null, { postSmurf })(Form);
