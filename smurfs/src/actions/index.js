@@ -23,7 +23,7 @@ export const POST_SMURFS_START = "POST_SMURFS_START";
 export const POST_SMURFS_SUCCESS = "POST_SMURFS_SUCCESS";
 export const POST_SMURFS_FAILURE = "POST_SMURFS_FAILURE";
 
-export const postSmurfs = (newSmurf) => {
+export const postSmurf = (newSmurf) => {
     return(dispatch) => {
         dispatch({ type: POST_SMURFS_START });
 

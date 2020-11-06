@@ -7,6 +7,7 @@ import { fetchSmurfs } from "./../actions";
 const Smurfs = (props) => {
   useEffect(() => {
     props.fetchSmurfs();
+    console.log(props.smurfs);
   }, []);
 
   return (

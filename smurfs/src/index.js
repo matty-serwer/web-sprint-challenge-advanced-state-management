@@ -9,17 +9,18 @@ import thunk from "redux-thunk";
 import "./index.css";
 
 // redux helpers
+import { smurfsReducer } from "./reducers";
 
 //components
 import App from "./components/App";
 
-function reducer() {
-  return {
-    test: "test reducer",
-  };
-}
+// function reducer() {
+//   return {
+//     test: "test reducer",
+//   };
+// }
 
-const store = createStore(reducer, applyMiddleware(thunk));
+const store = createStore(smurfsReducer, applyMiddleware(thunk));
 
 ReactDOM.render(
   <Provider store={store}>
